@@ -1,5 +1,5 @@
 # csdict
-This is Assignment 1 of Distributed System in 2022 Semester 1.
+This is Assignment 1 of Distributed System.
 
 
 ## 1 Problem Context
