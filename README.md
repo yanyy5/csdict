@@ -48,3 +48,13 @@ The displayed messages for these two button.
 
 #### 3.2.3 JSON file format
 We simply design the JSON file format for the dictionary: {word: meaning}
+
+## 4 Run the .jar file
+To start the server:
+```
+java –jar Server.jar <port> <dictionary-file>
+```
+To start the client:
+```
+java –jar Client.jar <server-address> <server-port>
+```
