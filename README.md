@@ -20,4 +20,31 @@ The client can query, add, remove and update the dictionary. And all the modific
 #### 3.1.1 Client
 There are three classes for client: ClientConnection, ClientGUI and Client. ClientConnection will handle the connection to server, and generate a Client object for ClientGUI. And all the function for dictionary are implement in ClientGUI.
 
+![image](https://github.com/yanyy5/csdict/blob/main/pics/clientuml.png)
+
+#### 3.1.2 Server
+There are three server classes and one dictionary class. First the ServerSetup will check the dictionary file (right path and valid format), and wait for client connection. And it will new a ServerThread to handle a connection. All the read and write to the dictionary will be implemented in Dictionary class.
+
+![image](https://github.com/yanyy5/csdict/blob/main/pics/serveruml.png)
+
+### 3.2 User Interface
+#### 3.2.1  Client GUI 
+Connect to the server:
+
+![image](https://github.com/yanyy5/csdict/blob/main/pics/connect.png)
+
+The main ClientGUI for query, add, remove update word from dictionary:
+
 ![image](https://github.com/yanyy5/csdict/blob/main/pics/clientgui.png)
+
+#### 3.2.2 Server GUI
+The GUI for Server: click the setup to wait for connection and click the disconnect to close the connection.
+
+![image](https://github.com/yanyy5/csdict/blob/main/pics/servergui.png)
+
+The displayed messages for these two button.
+
+![image](https://github.com/yanyy5/csdict/blob/main/pics/servermsg.png)
+
+#### 3.2.3 JSON file format
+We simply design the JSON file format for the dictionary: {word: meaning}
